@@ -1,0 +1,186 @@
+        /* Estilos para la barra de navegación */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        /* Estilos para la marca de la barra de navegación */
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Estilos para el botón de la barra de navegación en pantallas pequeñas */
+        .navbar-toggler {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .navbar-toggler-icon {
+            width: 24px;
+            height: 24px;
+            background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        /* Estilos para el contenedor colapsable de la barra de navegación */
+        .navbar-collapse {
+            flex-grow: 1;
+        }
+
+        /* Estilos para los elementos de la lista de navegación */
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 10px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 5px 10px;
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link:focus {
+            color: #0056b3;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+
+        .nav-link.disabled {
+            color: #6c757d;
+            pointer-events: none;
+        }
+
+        .nav-item.dropdown .nav-link {
+            position: relative;
+        }
+
+        /* Estilos para el menú desplegable */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 0.25rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+        }
+
+        .dropdown-menu .dropdown-item {
+            padding: 5px 20px;
+            color: #212529;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            clear: both;
+            font-weight: 400;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+        }
+
+        .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+            color: #16181b;
+            text-decoration: none;
+            background-color: #f8f9fa;
+        }
+
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-divider {
+            height: 1px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+            background-color: #e9ecef;
+        }
+
+        /* Estilos para el formulario de búsqueda */
+        .form-inline {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .form-control {
+            display: inline-block;
+            width: auto;
+            padding: 5px 10px;
+            margin-right: 5px;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 5px 10px;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 4px;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-outline-success {
+            color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-outline-success:hover, .btn-outline-success:focus {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        /* Media queries para adaptabilidad */
+        @media (max-width: 992px) {
+            .navbar-nav {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-item {
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+        }

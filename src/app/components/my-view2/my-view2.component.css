@@ -1,0 +1,57 @@
+        /* Estilos para la tarjeta */
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #343a40;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+            color: #fff;
+        }
+
+        /* Estilos para la imagen de la tarjeta */
+        .card-img {
+            margin: 0 auto;
+            flex-shrink: 0;
+            width: 60%;
+            text-align: center;
+            justify-content: center;
+            border-top-left-radius: 1.25rem;
+            border-top-right-radius: 1.25rem;
+        }
+
+        /* Estilos para la superposición de la imagen */
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1.25rem;
+            border-radius: 0.25rem;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Estilos para el título de la tarjeta */
+        .card-title {
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        /* Estilos para el texto de la tarjeta */
+        .card-text {
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+        }
+
+        /* Estilos para la última línea de texto */
+        .card-text:last-child {
+            margin-bottom: 0;
+        }
